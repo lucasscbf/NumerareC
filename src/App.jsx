@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "5586999665365";
+const WHATSAPP_NUMBER = "5586999614557";
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Olá, vim pelo site da NUMERARE e gostaria de atendimento contábil."
 )}`;
@@ -185,7 +185,7 @@ export default function App() {
         <div className={`mx-auto flex max-w-7xl items-center px-5 transition-all duration-500 ${scrolled ? "h-[66px]" : "h-[78px]"}`}>
           <a href="#inicio" className="flex w-[230px] shrink-0 items-center">
             <img
-              src="/logo-nova-numerare.png"
+              src={`${import.meta.env.BASE_URL}logo_numerare_sem_fundo_nova.png`}
               alt="Numerare Assessoria Contábil"
               className={`w-auto object-contain transition-all duration-500 ${scrolled ? "h-11" : "h-14"}`}
             />
